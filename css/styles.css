@@ -56,6 +56,9 @@ body {
     padding-right: 15px;
     outline: 2px solid red;
 }
+img {
+    display: block;
+}
 
 .btn {
     cursor: pointer;
@@ -87,9 +90,15 @@ body {
 
 
 /* ---------------------------HEADER------------------------------- */
+nav {
+    display: flex;
+    align-items: center;
+}
 
 .header {
     padding: 30px 0px;
+    border-bottom: 1px solid #ECECEC;
+    
 }
 
 .header-logo {
@@ -162,17 +171,17 @@ body {
 /* ---------------------------HERO------------------------------- */
 
 .hero {
-    background-color: #757575;
+    background-color: #2F303A;
+    flex-grow: 1;
 }
 
 .hero .container {
     display: flex;
-    outline: 2px solid red;
+    justify-content: center;
 }
 
 .hero-content {
     padding: 180px 200px 220px;
-    flex-grow: 1;
 }
 
 .hero-title {
@@ -186,8 +195,6 @@ body {
     margin-bottom: 25px;
     max-width: 700px;
     min-height: 120px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .hero-btn {
@@ -217,6 +224,18 @@ body {
 }
 
 /* ---------------------------ABOUT------------------------------- */
+.features {
+    padding-top: 94px;
+}
+.about-list {
+    display: flex;
+}
+.about-item {
+    width: calc((100% - 60px) / 4);
+}
+.about-item:not(:last-child) {
+    margin-right: 30px;
+}
 
 .about-title {
     font-weight: 700;
@@ -225,6 +244,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: inherit;
+    margin-bottom: 10px;
 }
 
 .about-text {
@@ -235,6 +255,10 @@ body {
 
 
 /* ---------------------------ABOUT-US------------------------------- */
+.about-us {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .title {
     font-weight: 700;
@@ -243,9 +267,29 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: inherit;
+    margin-bottom: 50px;
 }
 
+.about-us-list {
+    display: flex;
+    gap: 30px;
+}
+
+
 /* ---------------------------TEAM------------------------------- */
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-title {
+    margin-bottom: 50px;
+}
+
 .team-name {
     font-weight: 500;
     font-size: 16px;
@@ -262,10 +306,15 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
+.team-item {
+    width: calc((100% - 60px) / 4);
+}
 
 /* ---------------------------FOOTER------------------------------- */
 .footer {
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .address {
@@ -292,6 +341,12 @@ body {
     letter-spacing: 0.03em;
     color: var(--white);
     text-decoration: none;
+}
+.address-list {
+    margin-top: 20px;
+}
+.address-item:not(:last-child) {
+margin-bottom: 9px;
 }
 
 /* ---------------------------PORTFOLIO------------------------------- */
