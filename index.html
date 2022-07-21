@@ -8,31 +8,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="header">
-        <nav>
+        <div class="container header-container">
             <a href="/index.html" lang="en" class="header-logo"><span class="logo-web">Web</span>Studio</a>
-            <ul class="header-list list">
-                <li class="header-item"><a href="./index.html" class="header-link link current">Студия</a></li>
-                <li class="header-item"><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
-                <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
-            </ul>
-        </nav>
-        <ul class="header-contacts-list list">
-            <li class="header-contact-item"><a href="mailto:info@devstudio.com" class="header-contact link">info@devstudio.com</a></li>
-            <li class="header-contact-item"><a href="tel:+380961111111" class="header-contact link">+38 096 111 11 11</a></li>
-        </ul>   
+            <nav>
+                <ul class="header-list list">
+                    <li class="header-item"><a href="./index.html" class="header-link link current">Студия</a></li>
+                    <li class="header-item"><a href="./portfolio.html" class="header-link link">Портфолио</a></li>
+                    <li class="header-item"><a href="" class="header-link link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-contacts">
+            <ul class="header-contacts-list list">
+                <li class="header-contact-item"><a href="mailto:info@devstudio.com" class="header-contact link">info@devstudio.com</a></li>
+                <li class="header-contact-item mail"><a href="tel:+380961111111" class="header-contact link">+38 096 111 11 11</a></li>
+            </ul>  
+        </div> 
+        </div>
     </header>
     <main>
         <section class="hero">
+            <div class="container">
+                <div class="hero-content">
             <h1 class="hero-title">
             Эффективные решения для вашего бизнеса
             </h1>
             <button type="button" class="hero-btn btn">Заказать услугу</button>
+            </div>
+        </div>
         </section>
         <section>
+            <div class="container">
             <h2 class="visually-hidden">Особенности</h2>
             <ul class="about-list list">
                 <li class="about-item">
@@ -54,8 +67,10 @@
                     <p class="about-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+        </div>
         </section>
         <section class="about-us">
+            <div class="container">
             <h2 class="about-us-title title">Чем мы занимаемся</h2>
             <ul class="about-us-list list">
                 <li class="about-us-item">
@@ -64,8 +79,10 @@
                 <li class="about-us-item"><img src="./images/img2.jpg" alt="man with a laptop" width="370" height="294"></li>
                 <li class="about-us-item"><img src="./images/img(1).jpg" alt="colop pannel" width="370" height="294"/></li>
             </ul>
+        </div>
         </section>
         <section class="team">
+            <div class="container">
             <h2 class="team-title title">Наша команда</h2>
             <ul class="team-list list">
                 <li class="team-item">
@@ -81,10 +98,11 @@
                     <img src="./images/img(3).jpg" alt="a man with glasses" width="270" height="260"/><h3 class="team-name">Михаил Ермаков</h3><p class="team-text">UI Designer</p>  
                 </li>
             </ul>
-        
+            </div>
         </section>
     </main>
     <footer class="footer">
+        <div class="container">
         <a href="./index.html" lang="en" class="footer-logo"><span class="logo-web">Web</span>Studio</a>
         <address class="address">
             <ul class="address-list list">
@@ -93,6 +111,7 @@
                 <li class="address-item"><a href="tel:+380991111111" class="address-link link">+38 099 111 11 11</a></li>
             </ul>
     </address>
+</div>
     </footer>
 </body>
 </html>
