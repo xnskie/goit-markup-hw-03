@@ -181,6 +181,8 @@ nav {
 .hero .container {
     display: flex;
     justify-content: center;
+    background-color: #2F303A;
+    
 }
 
 .hero-content {
@@ -282,9 +284,13 @@ border-radius: 4px;
 
 /* ---------------------------TEAM------------------------------- */
 .team {
+    background-color: #F5F4FA;
+    flex-grow: 1;
+}
+.team> .container {
+    background-color: #F5F4FA;
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #F5F4FA;
 }
 .team-list {
     display: flex;
@@ -328,6 +334,10 @@ border-radius: 0px 0px 4px 4px;
 
 /* ---------------------------FOOTER------------------------------- */
 .footer {
+    background: #2F303A;
+    flex-grow: 1;
+}
+.footer> .container {
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
